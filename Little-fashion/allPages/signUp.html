@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <style>
+        .orClass {
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+
+        .orClass::after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            bottom: 0;
+            width: 150px;
+            height: 1px;
+            top: 10px;
+            border-radius: 20px;
+            background-color: grey;
+        }
+
+        .orClass::before {
+            content: "";
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            width: 150px;
+            height: 1px;
+            top: 10px;
+            border-radius: 20px;
+            background-color: grey;
+        }
+
+        .btn-transparent:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .btn-dark:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .svg {
+            width: 24px;
+            height: auto;
+            fill: white;
+            transition: filter 0.3s;
+        }
+
+        .btn:hover .svg {
+            filter: invert(100%);
+        }
+    </style>
+
+    <title>Sign Up </title>
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center" style="margin-top: 7%;">
+        <h1 style="font-weight: bolder; font-size: 45px;"> <strong>Sign Up</strong></h1>
+
+        <form class=" d-flex flex-column justify-content-center align-items-center"
+            style="width: 35%; margin-top: 20px; padding: 20px; ">
+            <button type="submit" class="btn btn-transparent border p-2  mb-4"
+                style="width: 70%; border-radius: 20px; padding: 10px 20px; "> <img src="../images/sign-in/google.svg"
+                    alt="" class="svg"> <span class="p-3"> Continue with
+                    Google</span></button>
+            <button type="submit" class="btn btn-transparent border p-2  mb-4"
+                style="width: 70%; border-radius: 20px; padding: 10px 20px; "> <img src="../images/sign-in/facebook.svg"
+                    alt="" class="svg"> <span class="p-3"> Continue with
+                    Facebook</span></button>
+
+            <div class="orClass">
+                <strong>OR</strong>
+            </div>
+
+            <div class="mb-4">
+                <input type="email" class="form-control p-2" id="exampleInputEmail1" placeholder="Email Address"
+                    aria-describedby="emailHelp" style="width: 400px;">
+            </div>
+            <div class="mb-4">
+                <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1"
+                    style="width: 400px;">
+                <label for=""><small style=" color: grey;">* shall
+                        include 0-9 a-z A-z in 4
+                        to 10
+                        characters</small> </label>
+            </div>
+            <div class="mb-4">
+                <input type="password" placeholder="Password Confirmation" class="form-control"
+                    id="exampleInputPassword1" style="width: 400px;">
+            </div>
+            <button type="submit" class="btn btn-dark p-2  mb-4 border-0"
+                style="width: 100%; border-radius: 20px; padding: 10px 0px; font-weight: 600;">CREATE ACCOUNT</button>
+            <a href="signin.html"
+                style="text-decoration: none; display: flex;  padding:0px 30px; color: grey ; align-items: center; justify-content: center;">Already
+                have an account? Please Sign In</a>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="col-lg-3">
+            <h3 class="fashionTitle"><span style="color: rgb(153, 149, 149);">LIttle</span>
+                <span style="color: white;">Fashion</span>
+            </h3>
+            <p> <span><small style="color: rgb(153, 149, 149);">copyright &#169; 20022 </small> </span> <span
+                    style="color: rgb(113, 111, 111); font-weight: 700;">Little
+                    Fashion</span> </p>
+
+            <p><small style="color: rgb(153, 149, 149);">Designed by Tooplate</small></p>
+        </div>
+
+        <div class="col-lg-3">
+            <h3 style="color: white;">Sitemap</h3>
+            <a href="story.html">Story</a> <br>
+            <a href="">Privacy Policy</a> <br>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="col-md-2 queryLink">
+            <a href="products.html">Products</a> <br>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="col-lg-3 socialMedia">
+            <h3 style="color: white;">Social</h3>
+            <a href=""><img src="../images/firstPage/youtube.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/whatsapp.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/instagram.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/facebook.svg" alt=""></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* Home Css */
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navbar-collapse ul li a {
+	position: relative;
+}
+
+.navbar-collapse ul li a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 3px;
+	top: 30px;
+	border-radius: 20px;
+	background-color: grey;
+	transition: width 0.2s ease;
+}
+
+.navbar-collapse ul li a:hover::after {
+	width: 100%;
+}
+.navbar-nav .nav-link:hover {
+	color: orange;
+}
+.hamburger {
+	display: none;
+	position: absolute;
+	font-size: 30px;
+	top: 0;
+	right: 0;
+}
+
+.fashion:hover {
+	color: red;
+}
+.active a {
+	color: orange;
+	font-weight: 700;
+}
+
+.circle-button {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 50px;
+	top: 250px;
+	z-index: 100;
+}
+
+.circle-button button {
+	background: transparent;
+	opacity: 0.5;
+	height: 45px;
+	width: 40px;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+
+.circle-button button:hover {
+	opacity: 1;
+	background-color: white;
+	box-shadow: 0px 0px 15px white;
+}
+
+.carouselData {
+	position: absolute;
+	bottom: 40px;
+	left: 60px;
+	color: white;
+	font-family: "Playfair Display", serif;
+}
+.btns {
+	background-color: black;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10px 0px;
+	width: 35%;
+	text-align: center;
+	cursor: pointer;
+	transform: translateX(-8%);
+}
+.btns:hover {
+	background-color: transparent;
+	border: 2px solid black;
+}
+button {
+	border: none;
+	padding: 10px 20px;
+	background-color: white;
+	font-size: 20px;
+	font-weight: 700;
+}
+.carouselData h1 {
+	font-size: 70px;
+	font-weight: 800;
+}
+.aboutContent {
+	margin-top: 10%;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+}
+
+/* Retail */
+
+.retail {
+	margin-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.retailContain {
+	padding-top: 10%;
+	padding-left: 20px;
+	background-color: #d2f2ff;
+}
+
+/* Featured Products */
+.featuredProducts {
+	margin-top: 10%;
+}
+.cards {
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.cards:hover {
+	box-shadow: 0px 0px 10px gray;
+}
+.like {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+.text {
+	background-color: #fff;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+.text p {
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+	font-weight: 700;
+	color: grey;
+}
+.card-body {
+	padding: 20px;
+}
+.card-body h5 {
+	font-weight: 700;
+}
+.cardAbout {
+	padding-top: 10px;
+	color: grey;
+}
+.footer {
+	margin: 0 auto;
+	margin-top: 60px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	padding-left: 80px;
+	display: flex;
+	justify-content: space-between; /* Add spacing between columns */
+	background-color: black;
+}
+
+/* Styles for links */
+.footer a {
+	text-decoration: none;
+	color: rgb(153, 149, 149);
+	line-height: 35px;
+}
+.footer a:hover {
+	color: blue;
+}
+.queryLink {
+	padding-top: 40px;
+}
+.socialMedia img {
+	padding: 10px 20px;
+}
+.fashionTitle {
+	padding-bottom: 30px;
+}
+
+/* Animation */
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn ease 1.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@media (max-width: 992px) {
+	.hamburger {
+		display: block;
+	}
+	.show ul {
+		margin-top: 30px;
+	}
+}
+@media (max-width: 1200px) {
+	.footer {
+		padding-left: 40px;
+		padding-right: 40px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.col-3,
+	.col-2 {
+		margin-bottom: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.socialMedia img {
+		padding: 5px;
+		width: 30px;
+		height: auto;
+	}
+}
+@media (max-width: 600px) {
+	.circle-button button {
+		height: 40px;
+		width: 35px;
+	}
+	.carouselData {
+		left: 30px;
+		bottom: 50px;
+	}
+	.carouselData h1 {
+		font-size: 40px;
+	}
+	.carouselData p {
+		font-size: 15px;
+	}
+	.btns {
+		width: auto;
+		transform: translate(-1%);
+	}
+}

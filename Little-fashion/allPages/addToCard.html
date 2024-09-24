@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Add To Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .cardAddBtn {
+            width: 45%;
+            padding: 15px 10px;
+            background-color: black;
+            text-align: center;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .cardAddBtn a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .cardAddBtn:hover {
+            background-color: white;
+            color: black
+        }
+
+        .cardAddBtn:hover a {
+            color: black;
+        }
+
+        .cardDetails a {
+            text-decoration: none;
+            color: gray;
+            padding-right: 20px;
+            font-weight: bold;
+        }
+
+        .cardDetails a:hover {
+            color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="col-3 fs-6">
+                        <a class="navbar-brand" style="line-height: normal;" href="index.html">
+                            <span class="fw-bold text-danger">Little</span>
+                            <span class="fashion fw-bold">Fashion</span>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5" id="navItems">
+                                <li class="nav-item px-3"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" href="story.html">Story</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" href="products.html">Products</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" href="faq.html">FAQs</a></li>
+                                <li class="nav-item px-3"><a class="nav-link" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="hamburger col-6" id="hamburger">
+                            <span>&#9776;</span>
+                        </div>
+                    </div>
+                    <div class="col-2 d-flex position-relative" style="justify-content: space-around;">
+                        <a href="signin.html"><img src="../images/firstPage/user.svg" alt=""></a>
+                        <a href="addToCard.html"><img src="../images/firstPage/bag-shopping.svg" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- 1st section -->
+
+    <div class="fisrSection" style="background-color: #d2f2ff; height: 350px;">
+        <h1 style="font-size: 55px; padding-top:7%; padding-left: 3%; font-weight: 700;"> <span style="color: red;">We
+                provide you</span>
+            <br> <span>Fashionable Stuffs</span>
+        </h1>
+    </div>
+
+    <!-- 2nd section -->
+
+    <div class="container addToCard">
+        <div class="addToCardContent mt-5 d-flex" style="width: 100%;">
+            <div class="cardImg " style="width: 50%;">
+                <img src="../images/Product-list/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" alt="" width="97%">
+            </div>
+            <div class="aboutAddToCard" style="width: 40%; margin-top: 20px;">
+                <div class="productContent d-flex"
+                    style="justify-content: space-between; align-items: center; width: 100%;">
+                    <div class=" product m-0">
+                        <h3 style="font-weight: 800; font-size: 45px; ">Tree Pot</h3>
+                        <p><small style="color: gray;">Original package design from house</small></p>
+                    </div>
+                    <div class="price">
+                        <small style="color: gray;">$25</small>
+                    </div>
+                </div>
+                <div class="description" style="margin-top: 30px;">
+                    <h5><small>Description</small></h5>
+                    <p
+                        style="color: gray; font-family:Playfair Display, system-ui; width: 80%; font-size: 25px; margin: 0;">
+                        Over
+                        three years in
+                        business ,
+                        We've had the chance to woek on a variety of projects, with companies </p>
+                </div>
+                <div class="cardBtn" style="margin-top:10% ; display: flex; justify-content: space-between;">
+                    <select name="quantity" id="Quantity"
+                        style="cursor: pointer;width: 50%; padding: 15px 10px; text-align: left; font-weight: bold;">
+                        <option value="Quantity">Quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <div class="cardAddBtn">
+                        <a href="">Add To Card</a>
+                    </div>
+                </div>
+
+                <div class="cardDetails mt-5">
+                    <a href=""><small>Details</small></a>
+                    <a href=""><small>Delivery and Payment</small></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 3rd section -->
+
+    <hr style="margin-top: 5%; margin-bottom: 9%;">
+
+    <div class="container featuredProducts">
+        <div class="row ">
+            <h1 class="text-left pb-5 " style="font-weight: 700;">You might also like</h1>
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="../images/Product-list/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg"
+                        class="card-img-top img-fluid" alt="...">
+                    <div class="like">
+                        <img src="../images/firstPage/heart.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>New Arrival</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Tree Pot</h5>
+                            </div>
+                            <div class="col-2">
+                                <small>$25</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="cardAbout"> <small>Original package design from house</small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="../images/Product-list/jordan-nix-CkCUvwMXAac-unsplash.jpeg"
+                        class="card-img-top img-fluid" alt="...">
+                    <div class="like">
+                        <img src="../images/firstPage/heart.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Low Price </p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title">Fashion Set</h5>
+                            </div>
+                            <div class="col-2">
+                                <small>$35</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="cardAbout"> <small>Costume Package</small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cards">
+                    <img src="../images/Product-list/nature-zen-3Dn1BZZv3m8-unsplash.jpeg"
+                        class="card-img-top img-fluid" alt="...">
+                    <div class="like">
+                        <img src="../images/firstPage/heart.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8">
+                                <h5 class="card-title ">Juice Drinks</h5>
+                            </div>
+                            <div class="col-2">
+                                <small>$45</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="cardAbout"> <small>Nature made another world</small> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="col-lg-3">
+            <h3 class="fashionTitle"><span style="color: rgb(153, 149, 149);">LIttle</span>
+                <span style="color: white;">Fashion</span>
+            </h3>
+            <p> <span><small style="color: rgb(153, 149, 149);">copyright &#169; 20022 </small> </span> <span
+                    style="color: rgb(113, 111, 111); font-weight: 700;">Little
+                    Fashion</span> </p>
+
+            <p><small style="color: rgb(153, 149, 149);">Designed by Tooplate</small></p>
+        </div>
+
+        <div class="col-lg-3">
+            <h3 style="color: white;">Sitemap</h3>
+            <a href="story.html">Story</a> <br>
+            <a href="">Privacy Policy</a> <br>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="col-md-2 queryLink">
+            <a href="products.html">Products</a> <br>
+            <a href="faq.html">FAQs</a>
+        </div>
+
+        <div class="col-lg-3 socialMedia">
+            <h3 style="color: white;">Social</h3>
+            <a href=""><img src="../images/firstPage/youtube.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/whatsapp.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/instagram.svg" alt=""></a>
+            <a href=""><img src="../images/firstPage/facebook.svg" alt=""></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
