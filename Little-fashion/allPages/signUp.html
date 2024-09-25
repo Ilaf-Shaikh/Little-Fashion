@@ -10,7 +10,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        * {
+            margin: 0;
+        }
+
         .orClass {
             position: relative;
             padding-bottom: 20px;
@@ -61,13 +66,30 @@
         .btn:hover .svg {
             filter: invert(100%);
         }
+
+        .cancel {
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            text-decoration: none;
+            font-size: 40px;
+            color: black;
+        }
+
+        .cancel :hover {
+            filter: brightness(0) saturate(100%) invert(56%) sepia(92%) saturate(1041%) hue-rotate(6deg) brightness(95%) contrast(102%);
+        }
+
+        .signIn:hover {
+            color: orange
+        }
     </style>
 
     <title>Sign Up </title>
 </head>
 
 <body>
-
+    <a href="index.html" class="cancel"><i class="fas fa-times"></i></a>
     <div class="container d-flex flex-column justify-content-center align-items-center" style="margin-top: 7%;">
         <h1 style="font-weight: bolder; font-size: 45px;"> <strong>Sign Up</strong></h1>
 
@@ -106,7 +128,7 @@
                 style="width: 100%; border-radius: 20px; padding: 10px 0px; font-weight: 600;">CREATE ACCOUNT</button>
             <a href="signin.html"
                 style="text-decoration: none; display: flex;  padding:0px 30px; color: grey ; align-items: center; justify-content: center;">Already
-                have an account? Please Sign In</a>
+                have an account? <span style="font-size: 18px; " class="signIn">Please Sign In</span></a>
         </form>
     </div>
 

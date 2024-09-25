@@ -20,6 +20,14 @@
         .active-button {
             color: orange;
         }
+
+        .icon img {
+            transition: filter 0.3s ease;
+        }
+
+        .icon:hover img {
+            filter: brightness(0) saturate(100%) invert(56%) sepia(92%) saturate(1041%) hue-rotate(6deg) brightness(95%) contrast(102%);
+        }
     </style>
 </head>
 
@@ -50,8 +58,13 @@
                         </div>
                     </div>
                     <div class="col-2 d-flex position-relative" style="justify-content: space-around;">
-                        <a href="signin.html"><img src="../images/firstPage/user.svg" alt=""></a>
-                        <a href="addToCard.html"><img src="../images/firstPage/bag-shopping.svg" alt=""></a>
+                        <a href="signin.html" class="icon">
+                            <img src="../images/firstPage/user.svg" alt="User Icon">
+                        </a>
+                        <a href="addToCard.html" class="icon">
+                            <img src="../images/firstPage/bag-shopping.svg" alt="Shopping Bag Icon">
+                        </a>
+
                     </div>
                 </div>
             </nav>
@@ -162,11 +175,11 @@
                     </div>
                 </div>
 
-                <div class="sections col-lg-10 fade-in p-5" id="secondSection">
+                <div class="sections col-lg-10 fade-in " id="secondSection">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 question img-fluid">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/f_7JqPDWhfw"
-                                frameborder="0" allowfullscreen></iframe>
+                            <iframe width="500px" height="100%" src="https://www.youtube.com/embed/f_7JqPDWhfw"
+                                frameborder="0" allowfullscreen style=" display: block; margin: 0 auto;"></iframe>
 
                         </div>
                         <div class=" col-lg-6 col-md-12 ">
@@ -174,21 +187,26 @@
                                 Life at Studio
                             </h3>
                             <p style="line-height: 30px; color: grey; font-size: 20px;">Lorem ipsum dolor, sit amet
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quisquam unde odit
-                                consectetur illo illum quos accusantium beatae, distinctio maiores aperiam numquam optio
-                                perspiciatis consequatur nesciunt est voluptatibus fuga. Ab et explicabo dolorem fuga
-                                non ullam commodi! Laborum corrupti eos quaerat eligendi, autem officiis, ab, nostrum
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quisquam unde
+                                odit
+                                consectetur illo illum quos accusantium beatae, distinctio maiores aperiam numquam
+                                optio
+                                perspiciatis consequatur nesciunt est voluptatibus fuga. Ab et explicabo dolorem
+                                fuga
+                                non ullam commodi! Laborum corrupti eos quaerat eligendi, autem officiis, ab,
+                                nostrum
                                 dolorum possimus dicta odit? </p>
 
-                            <a href="story.html" style="color: grey; text-decoration: none; font-weight: 700;">WORK WITH
+                            <a href="story.html" style="color: grey; text-decoration: none; font-weight: 700;">WORK
+                                WITH
                                 US
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="sections col-lg-10 fade-in p-5" id="thirdSection" style="padding-left: 0px;">
-                    <div class="row">
+                <div class="sections col-lg-10 fade-in" id="thirdSection">
+                    <div class=" row">
                         <div class="col-lg-6 col-md-12 question img-fluid">
                             <img src="../images/cody-lannom-G95AReIh_Ko-unsplash.jpeg" alt=""
                                 style="width: 90%;display: block; margin: 0 auto;">

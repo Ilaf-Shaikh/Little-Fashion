@@ -107,7 +107,7 @@ button {
 }
 
 .intro {
-	display: flex;
+	/* display: flex; */
 	flex-direction: column;
 	margin-top: 5%;
 }
@@ -174,7 +174,7 @@ button {
 	padding-top: 40px;
 	padding-left: 80px;
 	display: flex;
-	justify-content: space-between; /* Add spacing between columns */
+	justify-content: space-between;
 	background-color: black;
 }
 
@@ -212,12 +212,50 @@ button {
 		opacity: 1;
 	}
 }
+
+/* Base styles */
+.aboutContent {
+	padding: 3rem;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+.intro button {
+	margin: 0.5rem;
+}
+
+/* Media Queries */
+
 @media (max-width: 992px) {
 	.hamburger {
 		display: block;
 	}
 	.show ul {
 		margin-top: 30px;
+	}
+	.intro {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sections {
+		flex-direction: column;
+	}
+
+	.sections img,
+	.sections iframe {
+		width: 100%;
+		height: auto;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 18px;
 	}
 }
 @media (max-width: 1200px) {
@@ -227,6 +265,17 @@ button {
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+	}
+	.aboutContent {
+		padding: 2rem;
+	}
+
+	.intro {
+		text-align: center;
+	}
+
+	.sections {
+		margin-top: 2rem;
 	}
 }
 
@@ -238,6 +287,23 @@ button {
 	.col-3,
 	.col-2 {
 		margin-bottom: 15px;
+	}
+	h1 {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	.intro button {
+		width: 100%;
+		margin: 0.5rem 0;
+	}
+
+	.question {
+		text-align: center;
+	}
+
+	.col-lg-10 {
+		width: 100%;
 	}
 }
 
@@ -270,5 +336,26 @@ button {
 	.btns {
 		width: auto;
 		transform: translate(-1%);
+	}
+}
+@media (max-width: 576px) {
+	h1 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.third div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.third h5,
+	.third h3 {
+		width: 100%;
+		text-align: center;
 	}
 }
